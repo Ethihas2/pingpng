@@ -29,6 +29,9 @@ background-size: cover;
 
 #footer{
     background-color: gray;
+    margin-bottom: 0px;
     margin: 0px;
     padding: 5px;
+    position: fixed;
+    width: 100%;
 }
