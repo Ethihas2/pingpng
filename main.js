@@ -1,5 +1,6 @@
 
 /*created by prashant shukla */
+var noseY = "";
 
 var paddle2 =10,paddle1=10;
 
@@ -24,10 +25,28 @@ var ball = {
 function setup(){
   var canvas =  createCanvas(700,600);
   canvas.parent('canvas_div')
+  video = createCapture(VIDEO)
+  video.size(600,500)
+
+  poseNet = ml5.poseNet(video,modelLoaded);
+  poseNet.on('pose',gotPoses)
+}
+
+function modelLoaded(){
+  console.log('model loaded!')
+}
+
+function gotPoses(results){
+  if(results.length > 0){
+    console.log(results)
+    noseY = results[0].pose.nose.y
+    console.log(noseY)
+  }
 }
 
 
 function draw(){
+
 
  background(0); 
 
