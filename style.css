@@ -1,0 +1,28 @@
+body
+{
+background-position: center;
+background-size: cover;
+}
+
+.div_heading{
+    width: 100%;
+    text-align: left;
+
+}
+
+.div_heading h3{
+    display: inline;
+}
+
+.div_heading button{
+    float: right;
+    border: 1px white solid;
+}
+
+.button_start{
+    padding: 5px;
+    font-size: 22px;
+}
+#canvas_div{
+    margin-top: 100px;
+}
