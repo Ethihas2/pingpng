@@ -24,11 +24,35 @@
             <br><br>
 
             <button class="btn btn-success button_start"  onclick="start_game()">Play Game</button>
+            <button class="btn btn-success button_start" onclick="restart()">Restart</button>
+            <br><br>
             <h3 class="btn btn-danger" id="game-status"></h3>
 
             <div id="canvas_div"></div>
 
+            <div id="popup" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+              
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Modal Header</h4>
+                    </div>
+                    <div class="modal-body">
+                     <h3>*Move your nose up for the slider to move up.</h3>
+                     <h3>*Move your nose down for the slider to move down.</h3>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+              
+                </div>
+              </div>
+              <h4 id="footer"> Creator : Ethihas</h4>
         </center>
         <script src="main.js"></script>
+
     </body>
 </html>
